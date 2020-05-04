@@ -50,3 +50,4 @@ Route::get('/user/{name}', function ($name) {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profile', 'UserController@show')->name('profile');

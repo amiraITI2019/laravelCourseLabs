@@ -13,7 +13,7 @@ class AddMobileNumber extends Migration
      */
     public function up()
     {
-        Schema::create('mobile', function (Blueprint $table) {
+        Schema::create('mobiles', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->foreignId("user_id")->constrained('users');
@@ -28,6 +28,6 @@ class AddMobileNumber extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mobile');
+        Schema::dropIfExists('mobiles');
     }
 }
