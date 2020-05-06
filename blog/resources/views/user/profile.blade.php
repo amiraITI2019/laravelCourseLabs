@@ -55,14 +55,14 @@ Mobile:
 {{$mobile["mobile"]}}
 </td>
 <td>
-<a href="/mobile/delete/{{$mobile["mobile"]}}" class="btn btn-danger">
+<button onClick="deleteMob($mobile['id'])" class="btn btn-danger">
         Delete
-    </a>
+</button>
 </td>
 <td>
-    <a href="/mobile/update/{{$mobile["mobile"]}}" class="btn btn-danger">
+    <button class="btn btn-danger">
         update
-    </a>
+    </button>
 </td>
 
 </li></tr>
